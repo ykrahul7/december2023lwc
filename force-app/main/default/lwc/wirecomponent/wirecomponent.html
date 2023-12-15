@@ -1,0 +1,33 @@
+<template>
+    <lightning-card titel="wire component data">
+
+    <div class="slds-align_absolute-center slds-text-color_success slds-text-title_bold">
+      <p>{idss} hwsgg</p>
+    </div>
+    <div class="slds-align_absolute-center slds-text-color_success slds-text-title_bold">
+      <lightning-combobox
+      name="industry"
+      label="industry"
+      value={industryvalues}
+      placeholder="Select industry"
+      options={industryoptions}
+      onchange={handleChange}>
+    </lightning-combobox>
+    <lightning-combobox
+    name ="Types"
+    label="Type"
+    value={typevalues}
+    placeholder="Select Types"
+    options={Typesoptions}
+    onchange={handleChange}>
+  </lightning-combobox>
+  </div>
+  <div class ="slds-align_absolute-center slds-text-color_error">
+<p class="slds-text-color_error slds-text-title_bold"> Selected value is:</p> <p class="slds-text-color_success slds-text-title_bold">{industryvalues}</p>
+</div>
+<div class ="slds-align_absolute-center slds-text-color_error">
+<p class="slds-text-color_error slds-text-title_bold"> Selected value is:</p> <p class="slds-text-color_success slds-text-title_bold">{typevalues}</p>   
+</div>
+
+    </lightning-card>
+</template>

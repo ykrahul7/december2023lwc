@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="create record form demo">
+        <div class="slds-p-around_medium">
+            <lightning-button variant="brand" label="Click Here" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+           <p>dada  da a afvd ad as fgv </p>
+    <template if:true={accountdataa} >
+        <template for:each={accountdataa} for:item="iteem">
+        <div class="slds-box" key={iteem.id}>
+        <p><strong>Name :</strong> {iteem.Name}</p>
+        </div>
+        </template>
+    </template>
+
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="input for the data">
+    <div class="slds-m-around_medium">
+      <lightning-input type="text" label="Enter Name" placeholder="type here..." onchange={changehandler}></lightning-input>
+      <template if:true={datadd}>
+    <template for:each={datadd} for:item="itemm">
+      <div key={itemm.id} class="slds-box slds-box_xx-small slds-grid_align-center">
+        <p ><strong>Name</strong> :{itemm.Name}</p>
+        <p ><strong>Industry</strong> :{itemm.Industry}</p>
+        <p ><strong>Type</strong> :{itemm.Type}</p>
+        <p ><strong>Type</strong> :{itemm.Type}</p>
+      </div>
+
+      
+    </template>
+    </template>
+
+    </div>
+
+    </lightning-card>
+</template>
